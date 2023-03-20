@@ -20,14 +20,13 @@ let weather = {
         document.querySelector(".temp").innerText = temp + "°C";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + "km/h";
-        document.querySelector(".weather").classList.remove("loadung");
+        document.querySelector(".weather").classList.remove("loading");
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
 
     },
-
-    search: function () {
+        search: function () {
         this.fetchWeather(document.querySelector(".search_bar").value);
-    }
+    },
 };
 
 
